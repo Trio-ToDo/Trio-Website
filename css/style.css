@@ -1,0 +1,515 @@
+html {
+	--sans: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.element {
+	font-family: var(--system-ui);
+}
+
+/* reset bootstrap containers  */
+@media (min-width: 1200px) {
+
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1400px) {
+
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 960px;
+	}
+}
+
+html,
+body {
+	overflow-x: hidden;
+	font-size: 1rem;
+	font-family: var(--sans);
+}
+
+@media (max-width: 374px) {
+
+	html,
+	body {
+		font-size: 0.8rem;
+	}
+}
+
+body {
+	background: #FFFFFF;
+	background-size: 200% 100%;
+	background-attachment: scroll;
+}
+
+p,
+li {
+	color: #626266;
+}
+
+a:hover,
+a#contact {
+	color: #E15928;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--bs-dark);
+	font-weight: 800;
+}
+
+h1 {
+	color: black;
+
+}
+
+h1 span {
+	display: none;
+}
+
+h2 {
+	color: black;
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+h2 span {
+	color: #48A76A;
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+ul.icons div h4,
+ul.icons div p {
+	display: inline;
+}
+
+ul.media {
+	cursor: default;
+	padding-left: 0;
+	text-align: right;
+}
+
+ul.media li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 1.25rem;
+}
+
+ul.media a {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul.media a:hover span {
+	text-decoration: underline;
+}
+
+ul.media a:hover img {
+	transform: scale(1.2);
+}
+
+ul.media li a img {
+	height: 20px;
+	display: block;
+	transition: transform 0.2s;
+}
+
+ul.media li.assets a {
+	width: auto;
+}
+
+ul.media li.assets a:hover {
+	background: none;
+}
+
+ul.media li a span {
+	display: none;
+}
+
+ul.media li.assets a span {
+	display: inline-block;
+	color: black;
+	font-weight: 700;
+	font-size: 0.93rem;
+	margin-top: 0.2rem;
+	margin-left: 0.325rem;
+	margin-right: -0.3rem;
+	padding: 0 0.3rem;
+}
+
+a.download {
+	display: inline-block;
+}
+
+a.download img {
+	transition: transform 0.2s;
+	height: 3.75rem;
+
+}
+
+a.download:hover img {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+footer a.download:hover img {
+	transform: scale(1.03);
+}
+
+body.simple {
+	background: #FFFFFF;
+}
+
+body.simple h1 {
+	color: var(--bs-dark);
+}
+
+body.simple h2 {
+	color: var(--bs-dark);
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	font-size: 2.625rem;
+}
+
+body.simple h3 {
+	margin-top: 2rem;
+}
+
+/* header  */
+
+div.header h1 {
+	cursor: default;
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+}
+
+div.header h1 span {
+	font-size: 1.4375rem;
+	font-weight: 300;
+}
+
+div.header h1 img,
+div.header .dl img {
+	height: 2.25rem;
+	vertical-align: top;
+	/*	margin-bottom: -0.125rem;*/
+}
+
+div.header img.appstore_top {
+	height: 3.75rem;
+}
+
+/* top hero background */
+
+div.top p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #0f0f0f;
+}
+
+div.hero {
+	padding-top: 0;
+}
+
+/* Overlay images */
+.img-container {
+	position: relative;
+}
+
+.overlay-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* End - Overlay images */
+
+div.hero > picture.image-container {
+	display: flex;
+	justify-content: left;
+	margin-top: 10%;
+	margin-bottom: 4%;
+	vertical-align: 0;
+	height: 128px;
+}
+
+div.sidePhone img {
+	width: 90%;
+	margin-top: -70%;
+	margin-right: 30%;
+	margin-left: 30%;
+
+}
+
+
+@media (min-width: 768px) {
+
+	div.hero {
+		padding-top: 0;
+	}
+
+	div.top {
+		height: 930px;
+		background-position: bottom 20%;
+		background: linear-gradient(180deg, #fff 0%, #efefef 100%) repeat-x;
+		background-size: auto 700px;
+		padding-bottom: 10%;
+	}
+
+	h2 {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+
+	div.top p {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+}
+
+@media (min-width: 992px) {
+	div.top {
+		height: 712;
+	}
+}
+
+/* icons */
+
+ul.icons {
+	padding-left: 0;
+}
+
+ul.icons li {
+	list-style: none;
+	margin-top: 1.5rem;
+}
+
+ul.icons li h4,
+ul.icons li p {
+	font-size: 1.125rem;
+}
+
+ul.icons li h4 {
+	font-weight: 700;
+}
+
+div.understand img {
+	width: 80%;
+	margin-left: 50%;
+	margin-top: -80%;
+}
+
+@media (min-width: 268px) {
+	div.understand img {
+		width: 80%;
+		margin-left: 50%;
+		margin-right: 10%;
+		margin-top: -80%;
+	}
+
+}
+
+/* This one is active? Last one? --------------------------------------------- */
+@media (min-width: 992px) {
+	div.understand img {
+		width: 100%;
+		margin-left: 0%;
+		margin-top: -80%;
+		margin-right: 10%;
+	}
+
+}
+
+div.understand {
+	background: #FFFFFF;
+	background: linear-gradient(180deg, rgba(242, 242, 247, 1) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+}
+
+div.asseen div.container,
+div.notleft div.container {
+	background: #f2f2f7 url("/img/gravel.png") center repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+	div.asseen div.container,
+	div.notleft div.container {
+		background-size: 100px;
+	}
+}
+
+
+ul.asseen li a span {
+	display: none;
+}
+
+/* watch tracker  */
+
+div.watchtracker img {
+	width: 134%;
+	margin: -4% -17% -8%;
+}
+
+@media (min-width: 768px) {
+
+	ul.asseen li {
+		padding: 0.6rem 0.87rem;
+	}
+
+	ul.asseen img {
+		height: 1.4rem;
+	}
+
+	div.watchtracker img {
+		width: 138%;
+		margin: -8% -5% 0%;
+	}
+}
+
+
+@media (min-width:992px) {
+
+	div.watchtracker img {
+		width: 138.3%;
+		margin: 0% -5.054% -18%;
+	}
+
+	div.understand {
+		padding-bottom: 5.5rem;
+		margin-top: 10%;
+	}
+
+}
+
+div.notleft {
+	padding-top: 3rem;
+	padding-bottom: 4.5rem;
+}
+
+@media (min-width: 768px) {
+	div.notleft {
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+	}
+}
+
+@media (min-width: 992px) {
+	div.notleft {
+		padding-top: 0;
+		padding-bottom: 5rem;
+		margin-top: -0.75rem;
+	}
+}
+
+/* footer */
+
+body.simple footer {
+	background: none;
+}
+
+footer.trio h3 {
+	font-size: 2.375rem;
+	line-height: 3.5rem;
+	color:white;
+	font-weight: 700;
+	width: 18rem;
+}
+
+footer.trio h3 img {
+	height: 3.375rem;
+}
+
+footer.trio a {
+	text-decoration: underline;
+	transition: color 0.25s;
+}
+
+footer.trio a img {
+	max-height: min(25vw, 115px);
+}
+
+footer span:first-child {
+	cursor: default;
+}
+
+footer.trio div.container {
+	height: 480px;
+}
+
+footer.trio {
+	background: #000000;
+	background-size: 154vw auto;
+	background-position: -25vw top;
+	background-attachment: all;
+}
+
+@media (min-width: 768px) {
+
+	footer.trio {
+		background-position: 45% top;
+		background-size: auto 600px;
+		background-attachment: all;
+	}
+
+	footer.trio h3 {
+		font-size: 3rem;
+		line-height: 4.375rem;
+		width: auto;
+	}
+
+	footer.trio div.container {
+		height: 600px;
+	}
+
+}
+
+@media (min-width: 992px) {
+	footer.trio {
+		background-position: center top;
+	}
+}
+
+footer ul.media {
+	text-align: center;
+}
+
+footer p,
+footer a {
+	font-size: 0.875rem;
+	color: black;
+}
+
+body.simple footer p,
+body.simple footer a {
+	color: var(--bs-dark);
+	;
+}
+
+
+footer div.eu {
+	background: #131415;
+}
+
+footer div.eu a {
+	text-decoration: none;
+	color: #aeaeb2;
+}
+
+footer div.eu a:hover {
+	text-decoration: underline;
+}
