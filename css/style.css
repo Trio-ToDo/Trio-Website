@@ -161,13 +161,14 @@ a.download {
 a.download img {
 	transition: transform 0.2s;
 	height: 3.75rem;
-
+	margin-top: 1.0em;
 }
 
 a.download:hover img {
 	cursor: pointer;
 	transform: scale(1.05);
 }
+
 
 footer a.download:hover img {
 	transform: scale(1.03);
@@ -224,11 +225,11 @@ div.top p {
 	color: #0f0f0f;
 }
 
-div.hero {
+/* div.hero {
 	padding-top: 0;
-}
+} */
 
-div.hero > picture.image-container {
+div.hero>picture.image-container {
 	display: flex;
 	justify-content: left;
 	margin-top: 10%;
@@ -245,36 +246,26 @@ div.sidePhone img {
 
 }
 
-@media (min-width: 992px) {
-	div.top {
-		height: 712;
-	}
-}
-
-
 @media (min-width: 768px) {
 
-	div.hero {
-		padding-top: 0;
-	}
-
 	div.top {
-		height: 712px;
-		background-position: bottom 20%;
+		height: 800px;
 		background: linear-gradient(180deg, #fff 0%, #efefef 100%) repeat-x;
-		background-size: auto 700px;
-		padding-bottom: 10%;
-	}
-
-	h2 {
-		font-size: 3rem;
-		line-height: 3.5rem;
+		background-size: auto 800px;
 	}
 
 	div.top p {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
+		margin-top: 1.0em
 	}
+	
+	h2 {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+
+
 }
 
 
@@ -299,41 +290,20 @@ ul.icons li h4 {
 }
 
 
+
+/* proposition */
+
 div.proposition {
-	background: #FFFF00;
-	/* background: linear-gradient(180deg, rgba(42, 242, 247, 1) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF; */
+	background: #F0F0F0;
+	background: linear-gradient(180deg, #Fafafa 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
 }
 
-@media (min-width: 768px) {
-
-	div.proposition {
-		margin-top: 20%;
-		margin-left: -30%;
-	}
-}
-
-
-
-/* executed in order seen */
-@media (min-width: 992px) {
-
-	div.proposition img {
-		width: 70%;
-		margin-left: 25%;
-		margin-top: -60%;
-		margin-right: 10%;
-	}
-
-}
-
-/* adjus this */
 @media (min-width: 268px) {
 
 	div.proposition img {
 		width: 80%;
-		margin-left: 50%;
 		margin-right: 10%;
-		margin-top: -80%;
+		margin-top: -20%;
 	}
 
 }
@@ -351,7 +321,7 @@ body.simple footer {
 footer.trio h3 {
 	font-size: 2.375rem;
 	line-height: 3.5rem;
-	color:white;
+	color: white;
 	font-weight: 700;
 	width: 18rem;
 }
