@@ -54,7 +54,7 @@
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://twitter.com/trioapp">
+                <a target="_blank" href="https://x.com/TrioToday">
                   <img src="img/socials/twitter.svg" alt="X" />
                   <span>Twitter</span>
                 </a>
@@ -82,11 +82,10 @@
           <div class="col-md-8 col-sm-8">
             <div class="row align-items-end align-self-end">
               <div class="col-md-12 col-sm-12">
-                <h2>Your path to <span>Mindful Productivity</span></h2>
-                <p>
-                  In a world of endless to-do lists, Trio helps you cut through the noise. Focus on just three key tasks
-                  daily to drive meaningful progress and maintain balance in your life.
-                </p>
+                <h2>Simplify, Focus, Achieve 🚀</h2>
+
+                <blockquote id="haiku-container"></blockquote>
+                <p>In a world of endless to-do lists, Trio helps you cut through the noise. Focus on just three key tasks daily to drive meaningful progress and maintain balance in your life.</p>
               </div>
             </div>
             <div class="row align-items-start align-self-start">
@@ -337,7 +336,7 @@
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://twitter.com/triotoday">
+                <a target="_blank" href="https://x.com/TrioToday">
                   <img src="img/socials/twitter.svg" alt="Twitter" />
                   <span>Twitter</span>
                 </a>
@@ -542,20 +541,50 @@
         // 	console.log("scroll", e)
         // }
 
+        function getRandomHaiku() {
+        const haikus = [
+            "Three tasks, one focus\nSimplicity guides the day\nProgress, step by step",
+            "Morning reflection\nThree priorities emerge\nEvening, goals achieved",
+            "Widget on display\nDaily tasks at fingertips\nMindful productivity",
+            "Gentle reminders\nBalancing work and recharge\nTrio guides the way",
+            "Customized icons\nA personal touch to tasks\nMotivation blooms",
+            "Quiet mind, clear path\nThree tasks illuminate way\nFuture unfolds now",
+            "Dawn breaks, day begins\nPriorities crystallize\nDusk brings reflection",
+            "Endless to-do lists\nFade away like morning mist\nThree tasks remain clear",
+            "Digital whisper\n\"What matters most today?\"\nWisdom in restraint",
+            "Simplicity's art\nComplex world fades to background\nTrue self emerges",
+            "Burnout's heavy chains\nBreak under gentle guidance\nBalance restored, peace",
+            "Cluttered thoughts disperse\nFocus sharpens like a blade\nCut through life's chaos",
+            "Time flows like river\nThree stones create ripple effect\nChange the course, grow strong",
+            "Mindful taps on screen\nTransform habits day by day\nSmall acts, great impact",
+            "In garden of time\nCultivate three seeds daily\nWatch your life flourish",
+        ];
+
+        const randomIndex = Math.floor(Math.random() * haikus.length);
+        return haikus[randomIndex];
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const haikuContainer = document.getElementById('haiku-container');
+        const randomHaiku = getRandomHaiku();
+        haikuContainer.innerText = randomHaiku; //.replace(/\n/g, '\n\n');
+        });
+
+
         document.querySelectorAll(".shine:not(.clone)").forEach((section) => {
           shine.observe(section);
         });
 
-        document.querySelector(".aoty-top").onmouseover = function (event) {
-          event.target.classList.add("shine-active");
-          event.target.onmouseover = null;
-        };
+        // document.querySelector(".aoty-top").onmouseover = function (event) {
+        //   event.target.classList.add("shine-active");
+        //   event.target.onmouseover = null;
+        // };
 
-        document.querySelector(".ada-top").onmouseover = function (event) {
-          event.target.classList.add("shine-active");
-          event.target.onmouseover = null;
-        };
-      }
+        // document.querySelector(".ada-top").onmouseover = function (event) {
+        //   event.target.classList.add("shine-active");
+        //   event.target.onmouseover = null;
+        // };
+    }
     </script>
   </body>
 </html>
