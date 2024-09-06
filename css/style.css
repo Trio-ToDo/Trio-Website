@@ -85,7 +85,7 @@ h2 {
 	line-height: 2.5rem;
 }
 
-h2 span {
+h4 span, h2 span {
 	color: #48A76A;
 }
 
@@ -220,9 +220,17 @@ div.header img.appstore_top {
 /* top hero background */
 
 div.top p {
-	font-size: 1rem;
-	line-height: 1.5rem;
-	color: #0f0f0f;
+	color: #3f3f3f;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	margin-top: 0.5em
+}
+
+div.top h4 {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: #3f3f3f;
+	font-weight: 600;
 }
 
 div.hero>picture.image-container {
@@ -252,12 +260,12 @@ div.sidePhone img {
 	div.top p {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
-		margin-top: 1.0em
+		margin-top: 0.5em
 	}
 	
 	h2 {
 		font-size: 3rem;
-		line-height: 3rem;
+		line-height: 3.25rem;
 	}
 
 
