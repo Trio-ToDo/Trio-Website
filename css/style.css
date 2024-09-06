@@ -14,7 +14,7 @@ html {
 	.container-md,
 	.container-sm,
 	.container-xl {
-		max-width: 960px;
+		max-width: 1024px;
 	}
 }
 
@@ -25,7 +25,7 @@ html {
 	.container-md,
 	.container-sm,
 	.container-xl {
-		max-width: 960px;
+		max-width: 1024x;
 	}
 }
 
@@ -34,6 +34,10 @@ body {
 	overflow-x: hidden;
 	font-size: 1rem;
 	font-family: var(--sans);
+}
+
+div.top div.row {
+	margin: 0px;
 }
 
 @media (max-width: 374px) {
@@ -246,7 +250,7 @@ div.sidePhone img {
 	width: 100%;
 	margin-top: 10%;
 	/* margin-right: 30%; */
-	margin-left: 30%;
+	/* margin-left: 30%; */
 }
 
 @media (min-width: 768px) {
@@ -331,6 +335,11 @@ footer.trio h3 {
 
 footer.trio h3 img {
 	height: 3.375rem;
+}
+
+div.socials {
+	display: flex;
+	justify-content: end;
 }
 
 footer.trio a {
