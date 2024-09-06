@@ -1,504 +1,547 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#C0C0C0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#C0C0C0">
+    <meta property="og:site_name" content="Trio Today: The Task Manager that cares about you" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://triotoday.com/" />
+    <meta property="og:title" content="Trio Today: Task Manager" />
+    <meta
+      property="og:description"
+      content="Trio Tasks App is a todo list App that helps you focus on what is important. Three tasks that matter to you. Trio takes care of you before anything else. Your health and work life balance is precious."
+    />
 
-    <meta property="og:site_name" content="Trio Today: The Task Manager that cares about you">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://triotoday.com/">
-    <meta property="og:title" content="Trio Today: Task Manager">
-    <meta property="og:description"
-        content="Trio Tasks App is a todo list App that helps you focus on what is important. Three tasks that matter to you. Trio takes care of you before anything else. Your health and work life balance is precious." />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <meta name="apple-itunes-app" content="app-id=XXXXXXXXXXXXXXXX, affiliate-data=triotoday" />
 
-    <meta name="apple-itunes-app" content="app-id=XXXXXXXXXXXXXXXX, affiliate-data=triotoday">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,700&family=Nunito:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,700&family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
 
-    <title>Trio Today: Guided Task Management </title>
-</head>
+    <title>Trio Today: Guided Task Management</title>
+  </head>
 
-<body>
+  <body>
     <div class="header top px-2 px-md-0">
-        <div class="container pt-2 d-flex flex-column h-100">
-            <div class="row d-flex pt-2 align-items-stretch">
-                <h1 class="col pt-2 d-flex flex-column h-100">Trio App</h1>
+      <div class="container pt-2 d-flex flex-column h-100">
+        <div class="row d-flex pt-2 align-items-stretch">
+          <h1 class="col pt-2 d-flex flex-column h-100">Trio App</h1>
 
-                <div class="col pt-2 d-flex flex-column h-100">
-                    <ul class="media mt-1">
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/trioapp/">
-                                <img src="img/socials/instagram.svg" alt="Facebook" />
-                                <span>Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com/trioapp">
-                                <img src="img/socials/twitter.svg" alt="X" />
-                                <span>Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/trioapp">
-                                <img src="img/socials/fb.svg" alt="Instagram" />
-                                <span>Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="col pt-2 d-flex flex-column h-100">
+            <ul class="media mt-1">
+              <li>
+                <a target="_blank" href="https://www.instagram.com/trioapp/">
+                  <img src="img/socials/instagram.svg" alt="Facebook" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/trioapp">
+                  <img src="img/socials/twitter.svg" alt="X" />
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/trioapp">
+                  <img src="img/socials/fb.svg" alt="Instagram" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero">
+          <!-- This is the phone image-->
+          <picture class="image-container">
+            <source media="(min-width: 128px)" srcset="img/TrioLogoRounded.png" />
+            <source srcset="img/TrioLogoRounded.png" />
+            <img src="img/TrioLogoRounded.png" alt="Trio Today: The task manager that cares about you" />
+          </picture>
+        </div>
+
+        <div class="hero row align-items-start align-self-start">
+          <div class="col-md-8 col-sm-8">
+            <div class="row align-items-end align-self-end">
+              <div class="col-md-12 col-sm-12">
+                <h2>The Task Manager that<br /><span>cares about you.</span></h2>
+                <p>
+                  Trio embraces a compassionate approach, where productivity and self-care meet. Prioritize, Focus, and
+                  Achieve while maintaining a healthy balance.
+                </p>
+              </div>
             </div>
-
-            <div class="hero">
-                <!-- This is the phone image-->
-                <picture class="image-container">
-                    <source media="(min-width: 128px)" srcset="img/TrioLogoRounded.png" />
-                    <source srcset="img/TrioLogoRounded.png" />
-                    <img src="img/TrioLogoRounded.png" alt="Trio Today: The task manager that cares about you" />
-                </picture>
+            <div class="row align-items-start align-self-start">
+              <div class="col-md-12 col-sm-12">
+                <a class="download" href="https://apps.apple.com/app/app-url-here">
+                  <img src="img/AppStoreDark.svg" srcset="img/AppStoreDark.svg" alt="Download on the App Store" />
+                </a>
+              </div>
             </div>
-            <div class="hero row align-items-start align-self-start">
-                <div class="col-md-8 col-sm-8">
+          </div>
 
-                    <div class=" row align-items-end align-self-end">
-                        <div class="col-md-12 col-sm-12">
-                            <h2>The Task Manager that<br /><span>cares about you.</span></h2>
-                            <p>Trio embraces a compassionate approach, where productivity and self-care meet.
-                                Prioritize, Focus,
-                                and Achieve while maintaining a healthy balance.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-start align-self-start">
+          <div class="sidePhone col-md-4 col-sm-4 align-items-start align-self-start">
+            <picture>
+              <source media="(min-width: 1290px)" srcset="img/screens/hero-image-1.png" />
+              <source srcset="img/screens/hero-image-1.png" />
+              <img src="img/screens/hero-image-1.png" alt="Trio Today: The task manager that cares about you" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                        <div class="col-md-12 col-sm-12">
-                            <a class="download" href="https://apps.apple.com/app/app-url-here">
-                                <img src="img/AppStoreDark.svg"
-                                    srcset="img/AppStoreDark.svg"
-                                    alt="Download on the App Store" />
-                            </a>
-                        </div>
-                    </div>
+    <div class="proposition px-2 px-md-0 pt-md-5 pt-lg-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <picture>
+              <source
+                media="(min-width: 468px)"
+                srcset="img/screens/hero-image-1.png 800w, img/screens/hero-image-1.png"
+              />
+              <source srcset="img/screens/hero-image-1.png" />
+              <img src="img/screens/hero-image-1.png" alt="Award-winning Apple Watch workout tracker" />
+            </picture>
+          </div>
+
+          <div class="col pb-4 py-md-5">
+            <h3>Focus on what's important, and on you!</h3>
+            <ul class="icons">
+              <li>
+                <div>
+                  <h4>Three tasks a day.</h4>
+                  <p>
+                    Gentler Streak responds to your readiness and proposes daily workout actions that keep you within
+                    healthy activity levels.
+                  </p>
                 </div>
-
-                <div class="sidePhone col-md-4 col-sm-4 align-items-start align-self-start">
-                    <picture>
-                        <source media="(min-width: 1290px)" srcset="img/screens/hero-image-1.png" />
-                        <source srcset="img/screens/hero-image-1.png" />
-                        <img src="img/screens/hero-image-1.png" alt="Trio Today: The task manager that cares about you" />
-                    </picture>
-
+              </li>
+              <li>
+                <div>
+                  <h4>Smart Notifications. Guidance that fits you and cares for you</h4>
+                  <p>smart notifications...</p>
                 </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Progress at a glance. App Widget...</h4>
+                  <p>
+                    has all the must-have qualities of the best app tracker and is a unique tool to control fitness on
+                    the go!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="watchtracker px-2 py-md-4 pb-lg-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-1 pt-4 pt-md-0">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/gentlerAppleWatchApp.png 800w, img/gentlerAppleWatchApp@2x.png 1600w"
+              />
+              <source
+                srcset="
+                  img/gentlerAppleWatchAppMobile.png     390w,
+                  img/gentlerAppleWatchAppMobile@2x.png  780w,
+                  img/gentlerAppleWatchAppMobile@3x.png 1170w
+                "
+              />
+              <img src="img/gentlerAppleWatchAppMobile.png" alt="Award-winning Apple Watch workout tracker" />
+            </picture>
+          </div>
+          <div class="col-md-6 pe-4 pb-3 mb-md-5 pt-md-4 pb-lg-5 pb-md-4 py-lg-0">
+            <h3>Features</h3>
+            <ul class="icons">
+              <li>
+                <div>
+                  <h4>Manage your daily Trio</h4>
+                  <p>Add up to three tasks a day...</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Reschedule tasks</h4>
+                  <p>Missed some tasks from yesterday, no problem. Quickly reschedule them for today.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Access your historic data</h4>
+                  <p>browse your history of tasks and progress...</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4></h4>
+                  <p>let you track all your activities including dog walking, daily chores and more.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Smart notifications</h4>
+                  <p>for guided support in the morning and evening. It's up to you, and we're here to help.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gogentler px-2 p-md-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 pt-4 pt-md-0">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/goGentler.png 800w, img/goGentler@2x.png 1600w" />
+              <source srcset="img/goGentler.png 390w, img/goGentler@2x.png 780w, img/goGentler@3x.png 1170w" />
+              <img src="img/goGentler.png" alt="Go Gentler suggestions" />
+            </picture>
+          </div>
+          <div class="col pb-4 pb-md-0">
+            <h3>Customize the App they way you want</h3>
+            <ul class="icons">
+              <li>
+                <div>
+                  <h4>Personalize App colors</h4>
+                  <p>proposes daily workout actions that keep you within healthy activity levels.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Dark mode</h4>
+                  <p>
+                    go from rest to intense workouts, with the optimal hint listed first. They are specified in type,
+                    duration, and intensity.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Customize App Icon</h4>
+                  <p>
+                    to guide you towards the proposed goal: monitoring workout intensity and nudging you to step up or
+                    slow down.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="allactivities px-2 p-md-0 pt-md-4 pb-md-1 py-lg-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-1 pt-4 pt-md-0">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/everythingElse.png 800w, img/everythingElse@2x.png 1600w"
+              />
+              <source
+                srcset="img/everythingElse.png 390w, img/everythingElse@2x.png 780w, img/everythingElse@3x.png 1170w"
+              />
+              <img src="img/everythingElse.png" alt="A complete activity tool" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="trio px-2 px-md-0 text-center">
+      <div class="container d-flex flex-column">
+        <div class="row justify-content-center flex-fill">
+          <div class="col-md-7 col-lg-5 my-auto d-flex flex-column">
+            <div class="row">
+              <div class="col">
+                <h3 class="mx-auto">
+                  Whatever gets your&nbsp;<img
+                    src="img/gentlerStreakHeart.png"
+                    srcset="
+                      img/gentlerStreakHeart.png,
+                      img/gentlerStreakHeart@2x.png 2x,
+                      img/gentlerStreakHeart@3x.png 3x
+                    "
+                    alt="heart"
+                  />&nbsp;racing
+                </h3>
+              </div>
             </div>
-
-            <div class="understand px-2 py-md-4 pb-lg-0">
-                <div class="container">
-                    <div class="row align-items-center">
-
-                        <div class="col-md-6 pt-4 pt-md-0">
-                            <picture>
-                                <source media="(min-width: 468px)" srcset="img/screens/hero-image-1.png 800w, 
-						            img/screens/hero-image-1.png" />
-                                <source srcset="img/screens/hero-image-1.png" />
-                                <img src="img/screens/hero-image-1.png"
-                                    alt="Award-winning Apple Watch workout tracker" />
-                            </picture>
-                        </div>
-
-                        <div class="col pb-4 pb-md-0">
-                            <h3>Focus on what's important, and on you!</h3>
-                            <ul class="icons">
-                                <li>
-                                    <div>
-                                        <h4>Three tasks a day. </h4>
-                                        <p>Gentler Streak responds to your readiness and proposes daily workout actions
-                                            that
-                                            keep you within healthy activity levels.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Smart Notifications. Guidance that fits you and cares for you</h4>
-                                        <p> smart notifications... </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Progress at a glance. App Widget...</h4>
-                                        <p> has all the must-have qualities of the best app tracker and is a unique tool
-                                            to
-                                            control fitness on the go! </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+              <div class="col pt-4 pt-md-5 mt-2 mb-3">
+                <a class="download" href="https://apps.apple.com/app/gentler-streak-workout-tracker/id1576857102">
+                  <img
+                    src="img/downloadOnTheAppStoreWhite.png"
+                    srcset="
+                      img/downloadOnTheAppStoreWhite.png,
+                      img/downloadOnTheAppStoreWhite@2x.png 2x,
+                      img/downloadOnTheAppStoreWhite@3x.png 3x
+                    "
+                    alt="Download on the App Store"
+                  />
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
+        <div>
+          <div class="col d-block d-md-none">
+            <ul class="media my-1">
+              <li>
+                <a target="_blank" href="https://www.instagram.com/gentlerstreak/">
+                  <img src="img/socials/instagram.svg" alt="Facebook" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/triotoday">
+                  <img src="img/socials/twitter.svg" alt="Twitter" />
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/gentlerstreak">
+                  <img src="img/socials/fb.svg" alt="Instagram" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="text-center row justify-content-center p-0">
+            <span class="col-auto d-md-inline order-md-1 mt-2 mb-1">
+              <a class="me-2 mx-md-2 ms-md-4" href="/terms/">Terms&nbsp;of&nbsp;Use</a>
+              <a class="me-2 mx-md-2" href="/privacy/">Privacy&nbsp;Policy</a>
+              <a class="me-2 mx-md-2 me-md-4" href="mailto:support@gentler.app?subject=Hello!">Contact&nbsp;Us!</a>
+              <a
+                class="mx-md-2 me-2 d-md-inline d-md-none"
+                href="https://www.dropbox.com/sh/5ahzx2239fwov0f/AAC6hlyjX1IeF2jxFjGpvAXDa?dl=0"
+                >Media&nbsp;Kit</a
+              >
+              <span class="me-2 mx-md-2 ms-md-4">EN</span>
+              <a class="me-2 mx-md-2" href="/sl/">SL</a>
+            </span>
+            <span class="col-auto mt-2 mb-1">&copy; 2022 Gentler Stories LLC</span>
+          </p>
+        </div>
+      </div>
+    </footer>
 
-            <div class="watchtracker px-2 py-md-4 pb-lg-0">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-5 order-md-1 pt-4 pt-md-0">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="img/gentlerAppleWatchApp.png 800w, 
-						            img/gentlerAppleWatchApp@2x.png 1600w" />
-                                <source srcset="img/gentlerAppleWatchAppMobile.png 390w,
-							 				  img/gentlerAppleWatchAppMobile@2x.png 780w,
-							 				  img/gentlerAppleWatchAppMobile@3x.png 1170w" />
-                                <img src="img/gentlerAppleWatchAppMobile.png"
-                                    alt="Award-winning Apple Watch workout tracker" />
-                            </picture>
-                        </div>
-                        <div class="col-md-6 pe-4 pb-3 mb-md-5 pt-md-4 pb-lg-5 pb-md-4 py-lg-0">
-                            <h3>Features</h3>
-                            <ul class="icons">
-                                <li>
-                                    <div>
-                                        <h4>Manage your daily Trio</h4>
-                                        <p> Add up to three tasks a day...
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Reschedule tasks</h4>
-                                        <p> Missed some tasks from yesterday, no problem. Quickly reschedule them for today.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Access your historic data</h4>
-                                        <p> browse your history of tasks and progress...</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4></h4>
-                                        <p> let you track all your activities including dog walking, daily chores and
-                                            more.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Smart notifications</h4>
-                                        <p> for guided support in the morning and evening. It's up to you, and we're here to help.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-            <div class="gogentler px-2 p-md-0">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 pt-4 pt-md-0">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="img/goGentler.png 800w, 
-						            img/goGentler@2x.png 1600w" />
-                                <source srcset="img/goGentler.png 390w,
-							 				  img/goGentler@2x.png 780w,
-							 				  img/goGentler@3x.png 1170w" />
-                                <img src="img/goGentler.png" alt="Go Gentler suggestions" />
-                            </picture>
-                        </div>
-                        <div class="col pb-4 pb-md-0">
-                            <h3>Customize the App they way you want</h3>
-                            <ul class="icons">
-                                <li>
-                                    <div>
-                                        <h4>Personalize App colors</h4>
-                                        <p> proposes daily workout actions that keep you within healthy activity levels.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Dark mode</h4>
-                                        <p> go from rest to intense workouts, with the optimal hint listed first. They
-                                            are
-                                            specified in type, duration, and intensity.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Customize App Icon</h4>
-                                        <p> to guide you towards the proposed goal: monitoring workout intensity and
-                                            nudging
-                                            you to step up or slow down.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <script type="text/javascript">
+      let clone = function (id, minPerSlide) {
+        let items = document.getElementById(id).querySelectorAll(".carousel .carousel-item");
 
+        items.forEach((el) => {
+          let next = el.nextElementSibling;
+          for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+              // wrap carousel by using first child
+              next = items[0];
+            }
+            var cloneChild = next.cloneNode(true);
+            var clone = cloneChild.children[0];
+            clone.classList.add("clone");
 
-            <div class="allactivities px-2 p-md-0 pt-md-4 pb-md-1 py-lg-0">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-5 order-md-1 pt-4 pt-md-0">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="img/everythingElse.png 800w, 
-						            img/everythingElse@2x.png 1600w" />
-                                <source srcset="img/everythingElse.png 390w,
-							 				  img/everythingElse@2x.png 780w,
-							 				  img/everythingElse@3x.png 1170w" />
-                                <img src="img/everythingElse.png" alt="A complete activity tool" />
-                            </picture>
-                        </div>
+            el.appendChild(clone);
+            next = next.nextElementSibling;
+          }
+        });
+      };
+    </script>
+    <script type="text/javascript">
+      var timeouts = [];
+      const setThemeColor = (color, ease) => {
+        const meta = document.querySelector('meta[name="theme-color"]');
+        const body = document.querySelector("body");
+        if (meta) {
+          // no color seems to get reported as rgba0000
+          if (color == "rgba(0, 0, 0, 0)") {
+            color = "rgb(255, 255, 255)";
+          }
 
-                    </div>
-                </div>
-            </div>
+          timeouts.forEach((timeout) => {
+            clearTimeout(timeout);
+          });
+          timeouts = [];
 
-            <footer class="trio px-2 px-md-0 text-center">
-                <div class="container d-flex flex-column">
-                    <div class="row justify-content-center flex-fill">
-                        <div class="col-md-7 col-lg-5 my-auto d-flex flex-column">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="mx-auto">Whatever gets your&nbsp;<img src="img/gentlerStreakHeart.png"
-                                            srcset="img/gentlerStreakHeart.png, img/gentlerStreakHeart@2x.png 2x, img/gentlerStreakHeart@3x.png 3x"
-                                            alt="heart" />&nbsp;racing</h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col pt-4 pt-md-5 mt-2 mb-3">
-                                    <a class="download"
-                                        href="https://apps.apple.com/app/gentler-streak-workout-tracker/id1576857102">
-                                        <img src="img/downloadOnTheAppStoreWhite.png"
-                                            srcset="img/downloadOnTheAppStoreWhite.png, img/downloadOnTheAppStoreWhite@2x.png 2x, img/downloadOnTheAppStoreWhite@3x.png 3x"
-                                            alt="Download on the App Store" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="col d-block d-md-none">
-                            <ul class="media my-1">
-                                <li>
-                                    <a target="_blank" href="https://www.instagram.com/gentlerstreak/">
-                                        <img src="img/socials/instagram.svg" alt="Facebook" />
-                                        <span>Instagram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://twitter.com/triotoday">
-                                        <img src="img/socials/twitter.svg" alt="Twitter" />
-                                        <span>Twitter</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/gentlerstreak">
-                                        <img src="img/socials/fb.svg" alt="Instagram" />
-                                        <span>Instagram</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="text-center row justify-content-center p-0">
-                            <span class="col-auto d-md-inline order-md-1 mt-2 mb-1">
-                                <a class="me-2 mx-md-2 ms-md-4" href="/terms/">Terms&nbsp;of&nbsp;Use</a>
-                                <a class="me-2 mx-md-2" href="/privacy/">Privacy&nbsp;Policy</a>
-                                <a class="me-2 mx-md-2 me-md-4"
-                                    href="mailto:support@gentler.app?subject=Hello!">Contact&nbsp;Us!</a>
-                                <a class="mx-md-2 me-2 d-md-inline d-md-none"
-                                    href="https://www.dropbox.com/sh/5ahzx2239fwov0f/AAC6hlyjX1IeF2jxFjGpvAXDa?dl=0">Media&nbsp;Kit</a>
-                                <span class="me-2 mx-md-2 ms-md-4">EN</span>
-                                <a class="me-2 mx-md-2" href="/sl/">SL</a>
-                            </span>
-                            <span class="col-auto mt-2 mb-1">&copy; 2022 Gentler Stories LLC</span>
-                        </p>
-                    </div>
-                </div>
+          if (ease != true) {
+            meta.setAttribute("content", color);
+            // body.style.backgroundColor = color
+            return;
+          }
+          const start = meta.attributes["content"].value;
 
-            </footer>
+          const b = color
+            .slice(color[3] == "a" ? 5 : 4, -1)
+            .split(", ")
+            .map((x) => parseInt(x));
+          const a =
+            start[0] == "#"
+              ? b
+              : start
+                  .slice(4, -1)
+                  .split(", ")
+                  .map((x) => parseInt(x));
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-            </script>
+          for (var i = 0; i <= 1; i += 0.05) {
+            const c = a
+              .map(function (e, j) {
+                return Math.round(e * (1 - i) + i * b[j]);
+              })
+              .join(", ");
 
-            <script type="text/javascript">
+            timeouts.push(
+              setTimeout(function () {
+                meta.setAttribute("content", "rgb(" + c + ")");
+                // body.style.backgroundColor = "rgb(" + c + ")"
+              }, i * 500)
+            );
+          }
+        }
+      };
 
-                let clone = function (id, minPerSlide) {
+      if ("IntersectionObserver" in window) {
+        var thresholds = [];
+        for (var i = 0; i <= 1; i += 0.025) {
+          thresholds.push(i);
+        }
 
-                    let items = document
-                        .getElementById(id)
-                        .querySelectorAll('.carousel .carousel-item')
+        const topObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const { isIntersecting, target } = entry;
 
-                    items.forEach((el) => {
-                        let next = el.nextElementSibling
-                        for (var i = 1; i < minPerSlide; i++) {
-                            if (!next) {
-                                // wrap carousel by using first child
-                                next = items[0]
-                            }
-                            var cloneChild = next.cloneNode(true)
-                            var clone = cloneChild.children[0]
-                            clone.classList.add("clone")
+              const r = entry.boundingClientRect;
+              const size = window.getComputedStyle(target).getPropertyValue("background-size");
+              const backgroundHeight =
+                ((size.slice(-1) == "%" ? r.height : parseInt(size.split(" ")[1].slice(0, -2))) * 680) / 768;
+              const i = Math.max(0, (-r.y - (r.height - backgroundHeight)) / backgroundHeight);
 
-                            el.appendChild(clone)
-                            next = next.nextElementSibling
-                        }
-                    })
-                }
+              if (i < 1) {
+                const a = [200, 200, 200]; // top
+                const b = [155, 155, 155]; // bottom
+                const c = a
+                  .map(function (e, j) {
+                    return Math.round(e * (1 - i) + i * b[j]);
+                  })
+                  .join(", ");
+                setThemeColor("rgb(" + c + ")", false);
+              }
+            });
+          },
+          {
+            threshold: thresholds,
+          }
+        );
 
-            </script>
-            <script type="text/javascript">
-                var timeouts = []
-                const setThemeColor = (color, ease) => {
-                    const meta = document.querySelector('meta[name="theme-color"]')
-                    const body = document.querySelector('body')
-                    if (meta) {
+        topObserver.observe(document.querySelector("body>.header"));
 
-                        // no color seems to get reported as rgba0000
-                        if (color == "rgba(0, 0, 0, 0)") {
-                            color = "rgb(255, 255, 255)";
-                        }
+        const bottomObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const { isIntersecting, target } = entry;
+              if (isIntersecting) {
+                setThemeColor("rgb(155, 155, 155)", true);
+                // setThemeColor(window.getComputedStyle(target).getPropertyValue("background-color"), true)
+              }
+            });
+          },
+          {
+            rootMargin: "1px 0px -100% 0px",
+          }
+        );
 
-                        timeouts.forEach(timeout => { clearTimeout(timeout) })
-                        timeouts = []
+        const midObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const { isIntersecting, target } = entry;
+              if (isIntersecting) {
+                setThemeColor("rgb(255, 255, 255)", true);
+              }
+            });
+          },
+          {
+            rootMargin: "1px 0px -100% 0px",
+          }
+        );
 
-                        if (ease != true) {
-                            meta.setAttribute('content', color)
-                            // body.style.backgroundColor = color
-                            return
-                        }
-                        const start = meta.attributes['content'].value
+        document.querySelectorAll("body>footer").forEach((section) => {
+          bottomObserver.observe(section);
+        });
 
-                        const b = color.slice(color[3] == "a" ? 5 : 4, -1).split(", ").map(x => parseInt(x))
-                        const a = (start[0] == "#" ? b : start.slice(4, -1).split(", ").map(x => parseInt(x)))
+        document.querySelectorAll("body>div:not(.header)").forEach((section) => {
+          midObserver.observe(section);
+        });
 
-                        for (var i = 0; i <= 1; i += 0.05) {
-                            const c = a.map(function (e, j) {
-                                return Math.round(e * (1 - i) + i * b[j])
-                            }).join(", ")
+        const shine = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const { isIntersecting, target } = entry;
+              if (isIntersecting) {
+                target.classList.add("shine-active");
+                // } else {
+                // 	target.classList.remove("shine-active")
+              }
+            });
+          },
+          {
+            rootMargin: "0px",
+            threshold: [0.9],
+          }
+        );
 
-                            timeouts.push(
-                                setTimeout(function () {
-                                    meta.setAttribute('content', "rgb(" + c + ")")
-                                    // body.style.backgroundColor = "rgb(" + c + ")" 
-                                }, i * 500)
-                            )
-                        }
-                    }
-                }
+        // document.onscroll = function(e) {
+        // 	console.log("scroll", e)
+        // }
 
-                if ("IntersectionObserver" in window) {
-                    var thresholds = []
-                    for (var i = 0; i <= 1; i += 0.025) {
-                        thresholds.push(i)
-                    }
+        document.querySelectorAll(".shine:not(.clone)").forEach((section) => {
+          shine.observe(section);
+        });
 
-                    const topObserver = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            const { isIntersecting, target } = entry
+        document.querySelector(".aoty-top").onmouseover = function (event) {
+          event.target.classList.add("shine-active");
+          event.target.onmouseover = null;
+        };
 
-                            const r = entry.boundingClientRect
-                            const size = window.getComputedStyle(target).getPropertyValue("background-size")
-                            const backgroundHeight = (size.slice(-1) == "%" ? r.height : parseInt(size.split(" ")[1].slice(0, -2))) * 680 / 768
-                            const i = Math.max(0, (- r.y - (r.height - backgroundHeight)) / backgroundHeight)
-
-                            if (i < 1) {
-                                const a = [200, 200, 200] // top
-                                const b = [155, 155, 155] // bottom
-                                const c = a.map(function (e, j) {
-                                    return Math.round(e * (1 - i) + i * b[j])
-                                }).join(", ")
-                                setThemeColor("rgb(" + c + ")", false)
-                            }
-                        })
-                    }, {
-                        threshold: thresholds
-                    })
-
-                    topObserver.observe(document.querySelector('body>.header'))
-
-                    const bottomObserver = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            const { isIntersecting, target } = entry
-                            if (isIntersecting) {
-                                setThemeColor("rgb(155, 155, 155)", true)
-                                // setThemeColor(window.getComputedStyle(target).getPropertyValue("background-color"), true)
-                            }
-                        })
-                    }, {
-                        rootMargin: "1px 0px -100% 0px",
-                    })
-
-
-                    const midObserver = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            const { isIntersecting, target } = entry
-                            if (isIntersecting) {
-                                setThemeColor("rgb(255, 255, 255)", true)
-                            }
-                        })
-                    }, {
-                        rootMargin: "1px 0px -100% 0px",
-                    })
-
-                    document.querySelectorAll('body>footer').forEach(section => {
-                        bottomObserver.observe(section)
-                    })
-
-                    document.querySelectorAll('body>div:not(.header)').forEach(section => {
-                        midObserver.observe(section)
-                    })
-
-                    const shine = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            const { isIntersecting, target } = entry
-                            if (isIntersecting) {
-                                target.classList.add("shine-active")
-                                // } else {
-                                // 	target.classList.remove("shine-active")
-                            }
-                        })
-                    }, {
-                        rootMargin: "0px",
-                        threshold: [0.9]
-                    })
-
-                    // document.onscroll = function(e) {
-                    // 	console.log("scroll", e)
-                    // }
-
-                    document.querySelectorAll('.shine:not(.clone)').forEach(section => {
-                        shine.observe(section)
-                    })
-
-                    document.querySelector('.aoty-top').onmouseover = function (event) {
-                        event.target.classList.add("shine-active")
-                        event.target.onmouseover = null
-                    }
-
-                    document.querySelector('.ada-top').onmouseover = function (event) {
-                        event.target.classList.add("shine-active")
-                        event.target.onmouseover = null
-                    }
-
-                }
-            </script>
-</body>
-
+        document.querySelector(".ada-top").onmouseover = function (event) {
+          event.target.classList.add("shine-active");
+          event.target.onmouseover = null;
+        };
+      }
+    </script>
+  </body>
 </html>

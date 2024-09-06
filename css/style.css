@@ -228,18 +228,6 @@ div.hero {
 	padding-top: 0;
 }
 
-/* Overlay images */
-.img-container {
-	position: relative;
-}
-
-.overlay-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-/* End - Overlay images */
-
 div.hero > picture.image-container {
 	display: flex;
 	justify-content: left;
@@ -257,6 +245,12 @@ div.sidePhone img {
 
 }
 
+@media (min-width: 992px) {
+	div.top {
+		height: 712;
+	}
+}
+
 
 @media (min-width: 768px) {
 
@@ -265,7 +259,7 @@ div.sidePhone img {
 	}
 
 	div.top {
-		height: 930px;
+		height: 712px;
 		background-position: bottom 20%;
 		background: linear-gradient(180deg, #fff 0%, #efefef 100%) repeat-x;
 		background-size: auto 700px;
@@ -283,11 +277,6 @@ div.sidePhone img {
 	}
 }
 
-@media (min-width: 992px) {
-	div.top {
-		height: 712;
-	}
-}
 
 /* icons */
 
@@ -309,14 +298,38 @@ ul.icons li h4 {
 	font-weight: 700;
 }
 
-div.understand img {
-	width: 80%;
-	margin-left: 50%;
-	margin-top: -50%;
+
+div.proposition {
+	background: #FFFF00;
+	/* background: linear-gradient(180deg, rgba(42, 242, 247, 1) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF; */
 }
 
+@media (min-width: 768px) {
+
+	div.proposition {
+		margin-top: 20%;
+		margin-left: -30%;
+	}
+}
+
+
+
+/* executed in order seen */
+@media (min-width: 992px) {
+
+	div.proposition img {
+		width: 70%;
+		margin-left: 25%;
+		margin-top: -60%;
+		margin-right: 10%;
+	}
+
+}
+
+/* adjus this */
 @media (min-width: 268px) {
-	div.understand img {
+
+	div.proposition img {
 		width: 80%;
 		margin-left: 50%;
 		margin-right: 10%;
@@ -325,96 +338,9 @@ div.understand img {
 
 }
 
-/* This one is active? Last one? --------------------------------------------- */
-@media (min-width: 992px) {
-	div.understand img {
-		width: 70%;
-		margin-left: 0%;
-		margin-top: -30%;
-		margin-right: 10%;
-	}
-
-}
-
-div.understand {
-	background: #FFFFFF;
-	/* background: linear-gradient(180deg, rgba(242, 242, 247, 1) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF; */
-}
-
-div.asseen div.container,
-div.notleft div.container {
-	background: #f2f2f7 url("/img/gravel.png") center repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) {
-	div.asseen div.container,
-	div.notleft div.container {
-		background-size: 100px;
-	}
-}
 
 
-ul.asseen li a span {
-	display: none;
-}
 
-/* watch tracker  */
-
-div.watchtracker img {
-	width: 134%;
-	margin: -4% -17% -8%;
-}
-
-@media (min-width: 768px) {
-
-	ul.asseen li {
-		padding: 0.6rem 0.87rem;
-	}
-
-	ul.asseen img {
-		height: 1.4rem;
-	}
-
-	div.watchtracker img {
-		width: 138%;
-		margin: -8% -5% 0%;
-	}
-}
-
-
-@media (min-width:992px) {
-
-	div.watchtracker img {
-		width: 138.3%;
-		margin: 0% -5.054% -18%;
-	}
-
-	div.understand {
-		padding-bottom: 5.5rem;
-		margin-top: 10%;
-	}
-
-}
-
-div.notleft {
-	padding-top: 3rem;
-	padding-bottom: 4.5rem;
-}
-
-@media (min-width: 768px) {
-	div.notleft {
-		padding-top: 2rem;
-		padding-bottom: 4rem;
-	}
-}
-
-@media (min-width: 992px) {
-	div.notleft {
-		padding-top: 0;
-		padding-bottom: 5rem;
-		margin-top: -0.75rem;
-	}
-}
 
 /* footer */
 
