@@ -312,7 +312,7 @@ ul.icons li h4 {
 div.understand img {
 	width: 80%;
 	margin-left: 50%;
-	margin-top: -80%;
+	margin-top: -50%;
 }
 
 @media (min-width: 268px) {
@@ -328,9 +328,9 @@ div.understand img {
 /* This one is active? Last one? --------------------------------------------- */
 @media (min-width: 992px) {
 	div.understand img {
-		width: 100%;
+		width: 70%;
 		margin-left: 0%;
-		margin-top: -80%;
+		margin-top: -30%;
 		margin-right: 10%;
 	}
 
@@ -338,7 +338,7 @@ div.understand img {
 
 div.understand {
 	background: #FFFFFF;
-	background: linear-gradient(180deg, rgba(242, 242, 247, 1) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+	/* background: linear-gradient(180deg, rgba(242, 242, 247, 1) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF; */
 }
 
 div.asseen div.container,
