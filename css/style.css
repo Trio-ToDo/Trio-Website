@@ -298,19 +298,38 @@ ul.icons li h4 {
 
 div.proposition {
 	background: #F0F0F0;
-	background: linear-gradient(180deg, #Fafafa 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+	background: linear-gradient(180deg, #Fafafa 0%, #FFFFFF 100%), #FFFFFF;
 }
 
 @media (min-width: 268px) {
 
 	div.proposition img {
-		width: 80%;
-		margin-right: 10%;
+		width: 100%;
 		margin-top: -20%;
 	}
 
 }
 
+div.appearance {
+	background: #F0F0F0;
+	background: linear-gradient(180deg, #101010 0%, #222 100%), #FFFFFF;
+	color: #f0f0f0;
+}
+
+div.appearance p,
+div.appearance h4 {
+	color: #f0f0f0;
+}
+
+@media (min-width: 268px) {
+
+	div.appearance img {
+		width: 100%;
+		margin-top: -20%;
+		margin-bottom: 10%;
+	}
+
+}
 
 
 
