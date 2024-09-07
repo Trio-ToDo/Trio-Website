@@ -76,7 +76,6 @@ h6 {
 
 h1 {
 	color: black;
-
 }
 
 h1 span {
@@ -89,7 +88,8 @@ h2 {
 	line-height: 2.5rem;
 }
 
-h4 span, h2 span {
+h4 span,
+h2 span {
 	color: #48A76A;
 }
 
@@ -197,31 +197,27 @@ body.simple h3 {
 	margin-top: 2rem;
 }
 
-/* header  */
+/* Top Area (Header + Hero)  */
 
-div.header h1 {
+div.top h1 {
 	cursor: default;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 }
 
-div.header h1 span {
+div.top h1 span {
 	font-size: 1.4375rem;
 	font-weight: 300;
 }
 
-div.header h1 img,
-div.header .dl img {
+div.top h1 img {
 	height: 2.25rem;
 	vertical-align: top;
-	/*	margin-bottom: -0.125rem;*/
 }
 
-div.header img.appstore_top {
+div.top img.appstore_top {
 	height: 3.75rem;
 }
-
-/* top hero background */
 
 div.top p {
 	color: #3f3f3f;
@@ -266,7 +262,7 @@ div.sidePhone img {
 		line-height: 1.75rem;
 		margin-top: 0.5em
 	}
-	
+
 	h2 {
 		font-size: 3rem;
 		line-height: 3.25rem;
