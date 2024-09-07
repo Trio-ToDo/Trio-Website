@@ -242,8 +242,8 @@ div.hero>picture.image-container {
 	height: 128px;
 }
 
-div.sidePhone img {
-	width: 100%;
+div.heroimage img {
+	width: 130%;
 	margin-top: 10%;
 	/* margin-right: 30%; */
 	/* margin-left: 30%; */
