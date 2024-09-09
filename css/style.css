@@ -32,20 +32,12 @@ html {
 html,
 body {
 	overflow-x: hidden;
-	font-size: 1rem;
+	font-size: 1.0rem;
 	font-family: var(--sans);
 }
 
 div.top div.row {
 	margin: 0px;
-}
-
-@media (max-width: 374px) {
-
-	html,
-	body {
-		font-size: 0.8rem;
-	}
 }
 
 body {
@@ -166,13 +158,13 @@ a.download img {
 	transition: transform 0.2s;
 	height: 3.75rem;
 	margin-top: 1.0em;
+	margin-bottom: 1.0em;
 }
 
 a.download:hover img {
 	cursor: pointer;
 	transform: scale(1.05);
 }
-
 
 footer a.download:hover img {
 	transform: scale(1.03);
@@ -221,18 +213,10 @@ div.top img.appstore_top {
 
 div.top p {
 	color: #3f3f3f;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	margin-top: 0.5em
 }
 
-div.top h4 {
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	color: #3f3f3f;
-	font-weight: 600;
-}
 
+/* app logo */
 div.hero>picture.image-container {
 	display: flex;
 	justify-content: left;
@@ -242,96 +226,147 @@ div.hero>picture.image-container {
 	height: 128px;
 }
 
-div.heroimage img {
-	width: 130%;
-	margin-top: 10%;
-	/* margin-right: 30%; */
-	/* margin-left: 30%; */
-}
+/* smallest size */
 
-@media (min-width: 768px) {
-
-	div.top {
-		height: 800px;
-		background: linear-gradient(180deg, #fff 0%, #efefef 100%) repeat-x;
-		background-size: auto 800px;
+	div.heroimage img {
+		width: min(98vw, 300px);
+		margin-top: 10%;
 	}
 
-	div.top p {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-		margin-top: 0.5em
+	a.download img {
+		transition: transform 0.2s;
+		height: 2.75rem;
+		margin-top: 1.0em;
+	}
+
+	div.proposition img,
+	div.features img,
+	div.appearance img {
+		width: 90%;
+		margin-top: 0%;
+		margin-bottom: 1em;
 	}
 
 	h2 {
-		font-size: 3rem;
-		line-height: 3.25rem;
+		font-size: 1.75rem;
+		line-height: 2.5rem;
 	}
 
+	h3 {
+		font-size: 1.5rem;
+		line-height: 2.0rem;
+	}
+	
+	h4 {
+		font-size: 1.0rem;
+		line-height: 2.0rem;
+		color: #3f3f3f;
+		font-weight: 600;
+	}
 
+	p {
+		font-size: 1.0rem;
+		line-height: 1.4rem
+	}
+
+	ul.icons {
+		padding-left: 0%;
+		margin-left: 1em;
+		/* padding-right: 20px; */
+		list-style: none;
+	}
+
+	li {
+		margin-top: 1em;
+	}
+
+	div.proposition,
+	div.features,
+	div.appearance {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+/* end of smallest size */
+
+
+@media (min-width: 768px) {
+
+	div.heroimage img {
+
+		width: min(90vw, 300px);
+		/* height: 500px; */
+		margin-top: 10%;
+		padding-right: 25%;
+	}
+
+	div.proposition img,
+	div.features img,
+	div.appearance img {
+		width: 100%;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+		line-height: 2.0rem;
+		color: #3f3f3f;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.75rem
+	}
+
+	ul.icons {
+		padding-left: 0%;
+		margin-left: 0em;
+		list-style: none;
+	}
+
+	div.proposition,
+	div.features,
+	div.appearance {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
 }
 
+@media (min-width: 992px) {
 
-/* icons */
+	div.heroimage img {
 
-ul.icons {
-	padding-left: 0;
-}
+		width: min(90vw, 360px);
+		margin-top: 10%;
+		padding-right: 25%;
+	}
 
-ul.icons li {
-	list-style: none;
-	margin-top: 1.5rem;
-}
-
-ul.icons li h4,
-ul.icons li p {
-	font-size: 1.125rem;
-}
-
-ul.icons li h4 {
-	font-weight: 700;
 }
 
 
 
 /* proposition */
 
-div.proposition {
+div.proposition,
+div.features {
 	background: #F0F0F0;
-	background: linear-gradient(180deg, #Fafafa 0%, #FFFFFF 100%), #FFFFFF;
+	background: linear-gradient(180deg, #fafafa 0%, #FFFFFF 100%), #FFFFFF;
 }
 
-@media (min-width: 268px) {
-
-	div.proposition img {
-		width: 100%;
-		margin-top: -20%;
-	}
-
-}
 
 div.appearance {
-	background: #F0F0F0;
+	background: #282828;
 	background: linear-gradient(180deg, #101010 0%, #222 100%), #FFFFFF;
 	color: #f0f0f0;
 }
 
-div.appearance p,
-div.appearance h4 {
+div.appearance p {
 	color: #f0f0f0;
 }
 
-@media (min-width: 268px) {
-
-	div.appearance img {
-		width: 100%;
-		margin-top: -20%;
-		margin-bottom: 10%;
-	}
-
+div.appearance h4 {
+	color: #ffffff;
 }
-
-
 
 
 /* footer */
@@ -371,13 +406,14 @@ footer span:first-child {
 }
 
 footer.trio div.container {
-	height: 100px;
-
+	height: 320px;
+	display: flex;
+	justify-content: center;
 }
 
 footer.trio {
 	background: #181818;
-	/* background-size: 150vw auto; */
+	background-size: 150vw auto;
 	background-position: 40% center;
 	background-attachment: all;
 }
