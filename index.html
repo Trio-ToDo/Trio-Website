@@ -97,7 +97,7 @@
             </div>
             <!-- Download from App Store badge - provided by Apple as is  -->
             <div class="row align-items-end align-self-end">
-              <a class="download" href="https://apps.apple.com/app/app-url-here">
+              <a class="download" id="download-button" href="#">
                 <img src="img/AppStoreDark.svg" srcset="img/AppStoreDark.svg" alt="Download on the App Store" />
               </a>
             </div>
@@ -321,6 +321,11 @@
         const randomIndex = Math.floor(Math.random() * haikus.length);
         return haikus[randomIndex];
       }
+
+      document.getElementById('download-button').addEventListener('click', function(event) {
+        alert(getRandomHaiku());
+        event.preventDefault();
+      });
     </script>
   </body>
 </html>
