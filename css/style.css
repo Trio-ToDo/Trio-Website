@@ -343,7 +343,7 @@ body.simple footer {
 footer.trio h3 {
 	font-size: 2.375rem;
 	line-height: 3.5rem;
-	color: white;
+	color: rgb(234, 234, 234);
 	font-weight: 700;
 	width: 18rem;
 }
@@ -371,21 +371,22 @@ footer span:first-child {
 }
 
 footer.trio div.container {
-	height: 480px;
+	height: 100px;
+
 }
 
 footer.trio {
-	background: #e0e0e0;
-	background-size: 154vw auto;
-	background-position: -25vw top;
+	background: #181818;
+	/* background-size: 150vw auto; */
+	background-position: 40% center;
 	background-attachment: all;
 }
 
 @media (min-width: 768px) {
 
 	footer.trio {
-		background-position: 45% top;
-		background-size: auto 600px;
+		background-position: 45% center;
+		background-size: auto 320px;
 		background-attachment: all;
 	}
 
@@ -396,14 +397,16 @@ footer.trio {
 	}
 
 	footer.trio div.container {
-		height: 600px;
+		height: 320px;
+		display: flex;
+		justify-content: center;
 	}
 
 }
 
 @media (min-width: 992px) {
 	footer.trio {
-		background-position: center top;
+		background-position: center center;
 	}
 }
 
@@ -414,7 +417,7 @@ footer ul.media {
 footer p,
 footer a {
 	font-size: 0.875rem;
-	color: black;
+	color: #d5d5d5;
 }
 
 body.simple footer p,
@@ -425,7 +428,7 @@ body.simple footer a {
 
 
 footer div.eu {
-	background: #131415;
+	background: #d5d5d5;
 }
 
 footer div.eu a {
