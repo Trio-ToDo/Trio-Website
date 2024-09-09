@@ -297,7 +297,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       let clone = function (id, minPerSlide) {
         let items = document.getElementById(id).querySelectorAll(".carousel .carousel-item");
 
@@ -317,195 +317,29 @@
           }
         });
       };
-    </script>
+    </script> -->
     <script type="text/javascript">
-      var timeouts = [];
-      const setThemeColor = (color, ease) => {
-        const meta = document.querySelector('meta[name="theme-color"]');
-        const body = document.querySelector("body");
-        if (meta) {
-          // no color seems to get reported as rgba0000
-          if (color == "rgba(0, 0, 0, 0)") {
-            color = "rgb(255, 255, 255)";
-          }
+      function getRandomHaiku() {
+        const haikus = [
+          "Three tasks, one focus\nSimplicity guides the day\nProgress, step by step",
+          "Morning reflection\nThree priorities emerge\nEvening, goals achieved",
+          "Widget on display\nDaily tasks at fingertips\nMindful productivity",
+          "Gentle reminders\nBalancing work and recharge\nTrio guides the way",
+          "Customized icons\nA personal touch to tasks\nMotivation blooms",
+          "Quiet mind, clear path\nThree tasks illuminate way\nFuture unfolds now",
+          "Dawn breaks, day begins\nPriorities crystallize\nDusk brings reflection",
+          "Endless to-do lists\nFade away like morning mist\nThree tasks remain clear",
+          'Digital whisper\n"What matters most today?"\nWisdom in restraint',
+          "Simplicity's art\nComplex world fades to background\nTrue self emerges",
+          "Burnout's heavy chains\nBreak under gentle guidance\nBalance restored, peace",
+          "Cluttered thoughts disperse\nFocus sharpens like a blade\nCut through life's chaos",
+          "Time flows like river\nThree stones create ripple effect\nChange the course, grow strong",
+          "Mindful taps on screen\nTransform habits day by day\nSmall acts, great impact",
+          "In garden of time\nCultivate three seeds daily\nWatch your life flourish",
+        ];
 
-          timeouts.forEach((timeout) => {
-            clearTimeout(timeout);
-          });
-          timeouts = [];
-
-          if (ease != true) {
-            meta.setAttribute("content", color);
-            // body.style.backgroundColor = color
-            return;
-          }
-          const start = meta.attributes["content"].value;
-
-          const b = color
-            .slice(color[3] == "a" ? 5 : 4, -1)
-            .split(", ")
-            .map((x) => parseInt(x));
-          const a =
-            start[0] == "#"
-              ? b
-              : start
-                  .slice(4, -1)
-                  .split(", ")
-                  .map((x) => parseInt(x));
-
-          for (var i = 0; i <= 1; i += 0.05) {
-            const c = a
-              .map(function (e, j) {
-                return Math.round(e * (1 - i) + i * b[j]);
-              })
-              .join(", ");
-
-            timeouts.push(
-              setTimeout(function () {
-                meta.setAttribute("content", "rgb(" + c + ")");
-                // body.style.backgroundColor = "rgb(" + c + ")"
-              }, i * 500)
-            );
-          }
-        }
-      };
-
-      if ("IntersectionObserver" in window) {
-        var thresholds = [];
-        for (var i = 0; i <= 1; i += 0.025) {
-          thresholds.push(i);
-        }
-
-        const topObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              const { isIntersecting, target } = entry;
-
-              const r = entry.boundingClientRect;
-              const size = window.getComputedStyle(target).getPropertyValue("background-size");
-              const backgroundHeight =
-                ((size.slice(-1) == "%" ? r.height : parseInt(size.split(" ")[1].slice(0, -2))) * 680) / 768;
-              const i = Math.max(0, (-r.y - (r.height - backgroundHeight)) / backgroundHeight);
-
-              if (i < 1) {
-                const a = [200, 200, 200]; // top
-                const b = [155, 155, 155]; // bottom
-                const c = a
-                  .map(function (e, j) {
-                    return Math.round(e * (1 - i) + i * b[j]);
-                  })
-                  .join(", ");
-                setThemeColor("rgb(" + c + ")", false);
-              }
-            });
-          },
-          {
-            threshold: thresholds,
-          }
-        );
-
-        topObserver.observe(document.querySelector("body>.header"));
-
-        const bottomObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              const { isIntersecting, target } = entry;
-              if (isIntersecting) {
-                setThemeColor("rgb(155, 155, 155)", true);
-                // setThemeColor(window.getComputedStyle(target).getPropertyValue("background-color"), true)
-              }
-            });
-          },
-          {
-            rootMargin: "1px 0px -100% 0px",
-          }
-        );
-
-        const midObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              const { isIntersecting, target } = entry;
-              if (isIntersecting) {
-                setThemeColor("rgb(255, 255, 255)", true);
-              }
-            });
-          },
-          {
-            rootMargin: "1px 0px -100% 0px",
-          }
-        );
-
-        document.querySelectorAll("body>footer").forEach((section) => {
-          bottomObserver.observe(section);
-        });
-
-        document.querySelectorAll("body>div:not(.header)").forEach((section) => {
-          midObserver.observe(section);
-        });
-
-        const shine = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              const { isIntersecting, target } = entry;
-              if (isIntersecting) {
-                target.classList.add("shine-active");
-                // } else {
-                // 	target.classList.remove("shine-active")
-              }
-            });
-          },
-          {
-            rootMargin: "0px",
-            threshold: [0.9],
-          }
-        );
-
-        // document.onscroll = function(e) {
-        // 	console.log("scroll", e)
-        // }
-
-        function getRandomHaiku() {
-          const haikus = [
-            "Three tasks, one focus\nSimplicity guides the day\nProgress, step by step",
-            "Morning reflection\nThree priorities emerge\nEvening, goals achieved",
-            "Widget on display\nDaily tasks at fingertips\nMindful productivity",
-            "Gentle reminders\nBalancing work and recharge\nTrio guides the way",
-            "Customized icons\nA personal touch to tasks\nMotivation blooms",
-            "Quiet mind, clear path\nThree tasks illuminate way\nFuture unfolds now",
-            "Dawn breaks, day begins\nPriorities crystallize\nDusk brings reflection",
-            "Endless to-do lists\nFade away like morning mist\nThree tasks remain clear",
-            'Digital whisper\n"What matters most today?"\nWisdom in restraint',
-            "Simplicity's art\nComplex world fades to background\nTrue self emerges",
-            "Burnout's heavy chains\nBreak under gentle guidance\nBalance restored, peace",
-            "Cluttered thoughts disperse\nFocus sharpens like a blade\nCut through life's chaos",
-            "Time flows like river\nThree stones create ripple effect\nChange the course, grow strong",
-            "Mindful taps on screen\nTransform habits day by day\nSmall acts, great impact",
-            "In garden of time\nCultivate three seeds daily\nWatch your life flourish",
-          ];
-
-          const randomIndex = Math.floor(Math.random() * haikus.length);
-          return haikus[randomIndex];
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-          const haikuContainer = document.getElementById("haiku-container");
-          const randomHaiku = getRandomHaiku();
-          haikuContainer.innerText = randomHaiku; //.replace(/\n/g, '\n\n');
-        });
-
-        document.querySelectorAll(".shine:not(.clone)").forEach((section) => {
-          shine.observe(section);
-        });
-
-        // document.querySelector(".aoty-top").onmouseover = function (event) {
-        //   event.target.classList.add("shine-active");
-        //   event.target.onmouseover = null;
-        // };
-
-        // document.querySelector(".ada-top").onmouseover = function (event) {
-        //   event.target.classList.add("shine-active");
-        //   event.target.onmouseover = null;
-        // };
+        const randomIndex = Math.floor(Math.random() * haikus.length);
+        return haikus[randomIndex];
       }
     </script>
   </body>
