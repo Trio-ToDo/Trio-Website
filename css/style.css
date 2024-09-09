@@ -223,7 +223,7 @@ div.hero>picture.image-container {
 	margin-top: 10%;
 	margin-bottom: 4%;
 	vertical-align: 0;
-	height: 128px;
+	height: 100px;
 }
 
 /* smallest size */
@@ -292,6 +292,15 @@ div.appearance {
 
 @media (min-width: 768px) {
 
+	div.hero>picture.image-container {
+		display: flex;
+		justify-content: left;
+		margin-top: 10%;
+		margin-bottom: 4%;
+		vertical-align: 0;
+		height: 128px;
+	}
+	
 	div.heroimage img {
 		width: min(90vw, 360px);
 		margin-top: 10%;
@@ -401,8 +410,6 @@ footer span:first-child {
 
 footer.trio div.container {
 	height: 320px;
-	/* display: flex;
-	justify-content: center; */
 }
 
 footer.trio {
