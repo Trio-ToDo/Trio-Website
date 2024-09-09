@@ -300,7 +300,7 @@ div.appearance {
 		vertical-align: 0;
 		height: 128px;
 	}
-	
+
 	div.heroimage img {
 		width: min(90vw, 360px);
 		margin-top: 10%;
@@ -345,7 +345,7 @@ div.appearance {
 
 		width: min(90vw, 360px);
 		margin-top: 10%;
-		padding-right: 25%;
+		padding-right: 10%;
 	}
 
 }
