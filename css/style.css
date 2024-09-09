@@ -369,10 +369,6 @@ div.appearance h4 {
 
 /* footer */
 
-body.simple footer {
-	background: none;
-}
-
 footer.trio h3 {
 	font-size: 2.375rem;
 	line-height: 3.5rem;
@@ -405,8 +401,8 @@ footer span:first-child {
 
 footer.trio div.container {
 	height: 320px;
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 }
 
 footer.trio {
@@ -414,6 +410,7 @@ footer.trio {
 	background-size: 150vw auto;
 	background-position: 40% center;
 	background-attachment: all;
+	padding-bottom: 2em;
 }
 
 @media (min-width: 768px) {
