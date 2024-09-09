@@ -229,7 +229,7 @@ div.hero>picture.image-container {
 /* smallest size */
 
 div.heroimage img {
-	width: min(98vw, 300px);
+	width: min(95vw, 330px);
 	margin-top: 10%;
 }
 
@@ -293,11 +293,9 @@ div.appearance {
 @media (min-width: 768px) {
 
 	div.heroimage img {
-
-		width: min(90vw, 300px);
-		/* height: 500px; */
+		width: min(90vw, 360px);
 		margin-top: 10%;
-		padding-right: 25%;
+		padding-right: 10%;
 	}
 
 	div.proposition img,
