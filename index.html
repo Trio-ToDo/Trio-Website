@@ -297,27 +297,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script type="text/javascript">
-      let clone = function (id, minPerSlide) {
-        let items = document.getElementById(id).querySelectorAll(".carousel .carousel-item");
-
-        items.forEach((el) => {
-          let next = el.nextElementSibling;
-          for (var i = 1; i < minPerSlide; i++) {
-            if (!next) {
-              // wrap carousel by using first child
-              next = items[0];
-            }
-            var cloneChild = next.cloneNode(true);
-            var clone = cloneChild.children[0];
-            clone.classList.add("clone");
-
-            el.appendChild(clone);
-            next = next.nextElementSibling;
-          }
-        });
-      };
-    </script> -->
     <script type="text/javascript">
       function getRandomHaiku() {
         const haikus = [
