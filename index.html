@@ -102,11 +102,7 @@
             </div>
             <!-- Download from App Store badge - provided by Apple as is  -->
             <div class="row align-items-end align-self-end">
-              <a
-                class="download"
-                id="download-button"
-                href="https://apps.apple.com/de/app/trio-mindful-todo-list/id6636491845?l=en-GB"
-              >
+              <a class="download" id="download-button" href="https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=homepage&mt=8">
                 <img src="img/AppStoreDark.svg" srcset="img/AppStoreDark.svg" alt="Download on the App Store" />
               </a>
             </div>
@@ -277,11 +273,7 @@
         </div>
         <!-- Download from App Store badge - provided by Apple as is  -->
         <div class="row align-items-center align-self-center">
-          <a
-            class="download"
-            id="download-button-footer"
-            href="https://apps.apple.com/de/app/trio-mindful-todo-list/id6636491845?l=en-GB"
-          >
+          <a class="download" id="download-button-footer" href="https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=homepage&mt=8">
             <img src="img/AppStoreLight.svg" srcset="img/AppStoreLight.svg" alt="Download on the App Store" />
           </a>
         </div>
@@ -342,16 +334,6 @@
         const randomIndex = Math.floor(Math.random() * haikus.length);
         return haikus[randomIndex];
       }
-
-      document.getElementById("download-button").addEventListener("click", function (event) {
-        alert(getRandomHaiku());
-        event.preventDefault();
-      });
-
-      document.getElementById("download-button-footer").addEventListener("click", function (event) {
-        alert(getRandomHaiku());
-        event.preventDefault();
-      });
     </script>
   </body>
 </html>
